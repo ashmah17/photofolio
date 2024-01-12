@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lineawesome/css/line-awesome.min.css">
+    <link rel="stylesheet" href="./photo.css">
+    <script src="./jquery-ajax.js"></script>
+
+</head>
+<body>
+    
+    <header class="header">
+        <a href="#" class="logo">Portofolio</a>
+
+        <div class="icon">
+            <i class= "las la-bars"></i>
+
+        </div>
+        <nav class="navbar">
+            <a href="#home" class="active">home</a>
+            <a href="#about">about</a>
+            <a href="#services">services</a>
+            <a href="#portofolio">portofolio</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+    </header>
+  <header>
+        <a href="#" class="logo">Portofolio</a>
+
+		<div class="side_menu">
+			<div class="icon_box">
+				<div class="menu-icon-container">
+					<a href="#" class="menu-icon js-menu_toggle closed">
+						<span class="menu-icon_box">
+							<span class="menu-icon_line menu-icon_line--1"></span>
+							<span class="menu-icon_line menu-icon_line--2"></span>
+							<span class="menu-icon_line menu-icon_line--3"></span>
+						</span>
+					</a>
+				</div>
+			</div>
+			<div class="container">
+                <h2> Welcome</h2>
+				<ul class="list_load">
+					<li class="list_item"><a href="#home"> <i class="las la-home"></i>Home</a></li>
+					<li class="list_item"><a href="#about"><i class="las la-info-circle"></i>About</a></li>
+					<li class="list_item"><a href="#services"><i class="las la-briefcase"></i>Services</a></li>
+					<li class="list_item"><a href="#portofolio"><i class="las la-user"></i>Portofolio</a></li>
+					<li class="list_item"><a href="#contact"><i class="las la-mobile"></i>Contact</a></li>
+					
+				</ul>
+			</div>
+		</div>
+         
+
+     </header>
+	 
+    <!-- HOME SCTION DESIGN//// -->
+
+    <section class="home" id="home">
+        <div class="home-content">
+           <div class="home-name">
+            <h3>Hello it's me</h3>
+            <h1>Aysha Muhammad Aliyu</h1>
+            <br>
+            <h3>And I'm a <span>Frontend Developer</span></h3>
+           </div>
+                
+            <div class="home-img">
+                <img src="./img/photo cover.png" alt="">
+            </div>
+        </div>
+        
+       
+        <div class="home-foot">
+            <div class="social-media">
+                <a href=""><i class="lab la-facebook-f"></i> </a>
+                <a href=""><i class="lab la-twitter"></i> </a>
+                <a href=""><i class="lab la-instagram"></i> </a>
+                <a href=""><i class="lab la-linkedin"></i> </a>
+                <a href=""><i class="lab la-github"></i> </a>
+            </div>
+
+           <button class="btn" id="downloadcv">Download Cv</button>
+
+        </div>
+        
+    </section>
+
+        <!-- ABOUT SECTION//// -->
+
+        <section class="about" id="about">
+            <h2 class="heading">About <span>Me</span> </h2><br>
+            
+            <div class="about-wrap">
+                <div class="about-img">
+                    <img src="./img/photo npt cover.png" alt="">
+                </div>
+                    <div class="about-content">
+                        <h3>Frontend Developer</h3>
+                        <p id="displayed-text"></p>
+                        <button class="btn"id="btn" onclick="toggleText()">Readmore</button>
+                   
+                </div>
+            </div>
+          
+        </section>
+
+        <!-- SERVICES SECTION/// -->
+
+            <section class="services" id="services">
+                <h2 class="heading">My <span>Services</span></h2>
+
+                <div class="services-container">
+                    <div class="services-box">
+                        <i class="las la-code"></i>
+                        <h3>Web Development</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                             elit. Rerum ex et repudiandae distinctio pariatur, numquam 
+                             ea est ducimus, id quis 
+                            ipsam esse suscipit amet deleniti ab! Aliquam 
+                            asperiores repudiandae doloremque.</p>
+                            <a href="" class="btn">Read More</a>
+
+                    </div>
+
+
+                    <div class="services-box">
+                        <i class="las la-paint-brush"></i>
+                        <h3>Graphics</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                             elit. Rerum ex et repudiandae distinctio pariatur, numquam 
+                             ea est ducimus, id quis 
+                            ipsam esse suscipit amet deleniti ab! Aliquam 
+                            asperiores repudiandae doloremque.</p>
+                            <a href="" class="btn">Read More</a>
+                            
+                    </div>
+
+
+                    <div class="services-box">
+                        <i class="las la-tshirt"></i>
+                        <h3>Fashion Design</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                             elit. Rerum ex et repudiandae distinctio pariatur, numquam 
+                             ea est ducimus, id quis 
+                            ipsam esse suscipit amet deleniti ab! Aliquam 
+                            asperiores repudiandae doloremque.</p>
+                            <a href="" class="btn">Read More</a>
+                            
+                    </div>
+
+                    <div class="services-box">
+                        <i class="las la-palette"></i>
+                        <h3>MakeUp Artist</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                             elit. Rerum ex et repudiandae distinctio pariatur, numquam 
+                             ea est ducimus, id quis 
+                            ipsam esse suscipit amet deleniti ab! Aliquam 
+                            asperiores repudiandae doloremque.</p>
+                            <a href="" class="btn">Read More</a>
+                            
+                    </div>
+
+                </div>
+            </section>  
+            
+            <!-- PORTOFOLIO SECTION -->
+
+            <section class="portofolio" id="portofolio">
+                <h2 class="heading">Latest <span>Project</span></h2>
+                <div class="portofolio-container">
+                    <div class="portofolio-box">
+                        <img src="./img/a (2).jpeg" alt="">
+
+                        <div class="portofolio-layer">
+                            <h4>Interior Design</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut aperiam a accusamus. Aliquid ut omnis debitis molestias modi! Maxime nemo perspiciatis mollitia qui fugiat. Incidunt ea neque iusto nisi fuga.</p>
+                            <a href="">  <i class="las la-link"></i> </a>
+                        </div>
+                    </div>
+
+
+                    <div class="portofolio-box">
+                        <img src="./img/a (3).jpeg" alt="">
+                        <div class="portofolio-layer">
+                            <h4>Wall Frame</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut aperiam a accusamus. Aliquid ut omnis debitis molestias modi! Maxime nemo perspiciatis mollitia qui fugiat. Incidunt ea neque iusto nisi fuga.</p>
+                            <a href="">  <i class="las la-link"></i> </a>
+                        </div>
+                    </div>
+
+
+                    <div class="portofolio-box">
+                        <img src="./img/a (4).jpeg" alt="">
+                        <div class="portofolio-layer">
+                            <h4>Wall Frame</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut aperiam a accusamus. Aliquid ut omnis debitis molestias modi! Maxime nemo perspiciatis mollitia qui fugiat. Incidunt ea neque iusto nisi fuga.</p>
+                            <a href="">  <i class="las la-link"></i> </a>
+                        </div>
+                    </div>
+
+                    <div class="portofolio-box">
+                        <img src="./img/a (5).jpeg" alt="">
+                        <div class="portofolio-layer">
+                            <h4>Landscape</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut aperiam a accusamus. Aliquid ut omnis debitis molestias modi! Maxime nemo perspiciatis mollitia qui fugiat. Incidunt ea neque iusto nisi fuga.</p>
+                            <a href="">  <i class="las la-link"></i> </a>
+                        </div>
+                    </div>
+
+                    <div class="portofolio-box">
+                        <img src="./img/a (6).jpeg" alt="">
+                        <div class="portofolio-layer">
+                            <h4>Gown</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut aperiam a accusamus. Aliquid ut omnis debitis molestias modi! Maxime nemo perspiciatis mollitia qui fugiat. Incidunt ea neque iusto nisi fuga.</p>
+                            <a href="">  <i class="las la-link"></i> </a>
+                        </div>
+                    </div>
+
+                    <div class="portofolio-box">
+                        <img src="./img/a (5).jpeg" alt="">
+                        <div class="portofolio-layer">
+                            <h4>Landscape</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut aperiam a accusamus. Aliquid ut omnis debitis molestias modi! Maxime nemo perspiciatis mollitia qui fugiat. Incidunt ea neque iusto nisi fuga.</p>
+                            <a href="">  <i class="las la-link"></i> </a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- CONTACT SECTION -->
+            <section class="contact" id="contact">
+
+                <h2 class="heading">Contact <span>Me</span></h2>
+
+               <div class="contact-container">
+                <form action="">
+                    <div class="input-box">
+                        <fieldset>
+                            <input type="text"  class="input" placeholder="Full Name">
+                            <i class="las la-user"></i>
+                        </fieldset>
+                        <fieldset>
+                            <input type="text" class="input" placeholder="Email">
+                            <i class="las la-user"></i>
+                        </fieldset>
+                    </div>
+                    <div class="input-box">
+                        <fieldset>
+                            <input type="text"  class="input" placeholder="Mobile Number">
+                            <i class="las la-mobile"></i>
+                        </fieldset>
+                        <fieldset>
+                            <input type="text" class="input" placeholder="Email Subject">
+                            <i class="las la-envelope"></i>
+                        </fieldset>
+                    </div>
+                    <div class="text-area">
+                        <textarea name="" id="" cols="30" rows="10">Your Message:   </textarea>
+                        <button  type="submit" value="Send Message" class="btn" > Submit</button>
+                    </div>
+                    
+                </form>
+                    <!-- <form action="">
+                    <div class="input-box">
+                        <input type="text" placeholder="Full Name">
+                        <input type="email" placeholder="Email">
+                    </div>
+
+                    <div class="input-box">
+                        <input type="number" placeholder="Mobile Number">
+                        <input type="text" placeholder="Email Subject">
+                    </div>
+
+                    <textarea name="" id="" cols="30" rows="10">Your Message</textarea>
+                    <input type="submit" value="Send Message" class="btn">
+                    
+                    </form> -->
+               </div>
+
+            </section>
+
+      
+            <script>
+                const myObject = {
+                    fullText: "I am Passionate Frontend Developer dedicated to crafting engaging and responsive web experience. Proficient in HTML, CSS, and JavaScript,with a keen eye for design and user-centric solutions",
+                    truncatedText: "",
+                    isExpanded: false,
+                     };
+                const characterLimit = "100";
+                myObject.truncatedText = myObject.fullText.slice(0, characterLimit);
+    
+                function toggleText() {
+                    const displayedText = document.getElementById("displayed-text");
+                   
+                   if (myObject.isExpanded){
+                    displayedText.textContent = myObject.truncatedText;
+                    document.getElementById('btn').textContent = 'Read More';
+                }else{
+                    displayedText.textContent = myObject.fullText;
+                    document.getElementById('btn').textContent = 'Read Less';
+    
+                }
+                myObject.isExpanded = ! myObject.isExpanded;
+                 }
+                document.getElementById("displayed-text").textContent = myObject.truncatedText;
+    
+                
+            </script>
+
+
+<!-- <script>
+    $(document).ready(function(){
+        $('#downloadcv').on("click", function(){
+
+            downloadCV();
+        });
+        function downloadCV() {
+            $.ajax({
+                url:'photo folio\Aisha Muhammad Aliy1.docx',
+                method:'GET',
+                xhrFields:{
+                    responceType:'blob'
+                },
+                success:function(data) {
+                    var blob = new Blob([data], {type: 'application/docx'});
+                    var link = document.createElement('a');
+
+                    link.href = window.URL.createObjectURL(blob);
+                    link.download = 'Aisha Muhammad Aliy1.docx';
+                    link.click();
+                },
+                error:function() {
+                    console.error('error downloading cv');
+                }
+            });
+        }
+
+    });
+</script> -->
+
+<!-- <script>
+    $(document).ready(function(){
+
+    $('#downloadcv').click(function(){
+    var result = $(this).val();
+
+    // if($result !== ''){
+    $.ajax({
+
+        url:'fetch.php',
+        type:'POST',
+        data:{result:result},
+        success:function(data){
+            $('#result').html(data);
+            // alert("hello");
+        }
+    
+    });
+    //  }else{
+    //      $(#result).html(data);
+    //  }
+    });
+    });
+</script> -->
+
+     
+
+            <script src="./jquery.js"></script>
+            <script src="./photo.js"></script>
+
+</body>
+</html>
